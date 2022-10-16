@@ -7,8 +7,12 @@ Naufal Taufiq Ridwan<br>
 # Video Demo
 https://drive.google.com/file/d/1AdIc4Xk8o7KEj6Rzn7d-fXGBdTz7pCIJ/view
 # Daftar Package
-- expo-camera
-- expo-location
+- Camera
+- Location
+- StatusBar
+- NavigationBar
+- SplashScreen
+- SQLite
 
 # Cara Install dan Menjalankan
 ```bash 
