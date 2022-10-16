@@ -34,7 +34,8 @@
         "android.permission.READ_EXTERNAL_STORAGE",
         "android.permission.WRITE_EXTERNAL_STORAGE",
         "android.permission.ACCESS_MEDIA_LOCATION"
-      ]
+      ],
+      "package": "com.n0l3r.myfavplace"
     },
     "web": {
       "favicon": "./assets/favicon.png"
