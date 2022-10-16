@@ -18,13 +18,23 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "The app needs access to your photos to save pictures.",
+        "NSPhotoLibraryAddUsageDescription": "The app needs access to your photos to save pictures."
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.ACCESS_MEDIA_LOCATION"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -32,9 +42,9 @@
     "plugins": [
       [
         "expo-image-picker",
-          {
-            "cameraPermission": "The app needs access to your camera to take pictures."
-          }
+        {
+          "cameraPermission": "The app needs access to your camera to take pictures."
+        }
       ],
       [
         "expo-media-library",
@@ -44,7 +54,11 @@
           "isAccessMediaLocationEnabled": true
         }
       ]
-      
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "0b0f7989-9fb1-4c73-8149-2f4243dc00b1"
+      }
+    }
   }
 }
