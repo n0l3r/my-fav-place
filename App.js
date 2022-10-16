@@ -18,6 +18,25 @@ import { init } from './util/database'
 const { Screen, Navigator } = createBottomTabNavigator()
 const App = () => {
 
+  // init database
+  const [isDatabaseReady, setIsDatabaseReady] = useState(false)
+
+  const initDatabase = useCallback(async () => {
+    try {
+      await SplashScreen.preventAutoHideAsync()
+      await init()
+      await SplashScreen.hideAsync()
+      setIsDatabaseReady(true)
+    } catch (err) {
+      console.log(err)
+    }
+  }, [])
+
+  useEffect(() => {
+    initDatabase()
+  }, [initDatabase])
+
+  
 
   return (
     <SafeAreaView style={styles.container}>

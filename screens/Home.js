@@ -10,7 +10,6 @@ import CardImage from '../components/CardImage';
 const Home = ({navigation}) => {
 
     const [loadedPlaces, setLoadedPlaces] = useState([])
-    const [loadedImages, setLoadedImages] = useState([])
 
     const isFocused = useIsFocused()
 
