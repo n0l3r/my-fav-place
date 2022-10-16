@@ -28,6 +28,23 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+          {
+            "cameraPermission": "The app needs access to your camera to take pictures."
+          }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "The app needs access to your photos to save pictures.",
+          "savePhotosPermission": "The app needs access to your photos to save pictures.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ]
+      
+    ]
   }
 }
